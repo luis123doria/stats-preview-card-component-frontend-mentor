@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![project-screenshot](images\project-screenshot.png)
+![project-screenshot](https://i.ibb.co/R750P0f/project-screenshot.png)
 
 ### Links
 
