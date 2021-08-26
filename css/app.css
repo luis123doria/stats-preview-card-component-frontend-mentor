@@ -1,0 +1,150 @@
+:root {
+	--dark-blue: hsl(233, 47%, 7%);
+	--card-bg: hsl(244, 38%, 16%);
+	--soft-violet: hsl(277, 64%, 61%);
+	--inter: 'Inter', sans-serif;
+	--lexend-deca: 'Lexend Deca', sans-serif;
+	--white: #fff;
+	--white-75-opacity: hsla(0, 0%, 100%, 0.75);
+	--white-60-opacity: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	background-color: var(--dark-blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: var(--inter);
+	color: var(--white-75-opacity);
+}
+
+h1 {
+	color: var(--white);
+	font-size: 2.25rem;
+}
+
+/* Styles */
+
+@media (min-width: 0px) and (max-width: 1035px){
+	.main {
+		background-color: var(--card-bg);
+		max-width: 375px;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.main__card-info {
+		padding: 40px;
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+		text-align: center;
+	}
+
+	.cl-violet {
+		color: var(--soft-violet);
+	}
+
+	.card-info__text {
+		padding: 30px 0 50px 0;
+		line-height: 30px;
+	}
+
+	.card-info__stats {
+		display: grid;
+		grid-template-rows: repeat(3, 1fr);
+		font-family: var(--lexend-deca);
+		text-align: center;
+	}
+
+	.stats {
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.cl-white {
+		color: var(--white);
+		font-size: 2rem;
+		font-weight: 400;
+	}
+
+	.main__card-image {
+		width: 100%;
+		height: auto;
+	}
+
+	.image {
+		width: 100%;
+		height: auto;
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+	}
+}
+
+
+/* Desktop Version */
+@media (min-width: 1036px) {
+
+	.main {
+		background-color: var(--card-bg);
+		border-radius: 10px;
+		display: flex;
+		max-width: 1050px;
+		max-height: 446px;
+	}
+
+	.main__card-info {
+		padding: 60px;
+		text-align: left;
+	}
+
+	.cl-violet {
+		color: var(--soft-violet);
+	}
+
+	.card-info__text {
+		padding: 30px 0 50px 0;
+		line-height: 30px;
+	}
+
+	.card-info__stats {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		font-family: var(--lexend-deca);
+		text-align: left;
+	}
+
+	.stats {
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.cl-white {
+		color: var(--white);
+		font-size: 2rem;
+		font-weight: 400;
+	}
+
+	.main__card-image {
+		width: 100%;
+		height: auto;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	.image {
+		height: auto;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+}
